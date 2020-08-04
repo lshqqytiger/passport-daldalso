@@ -4,6 +4,7 @@
     "description": "Daldalso authentication strategy for Passport",
     "dependencies": {
 		"passport-oauth": "^1.0.0",
-		"underscore": "^1.8.3"
+		"underscore": "^1.8.3",
+		"uid2": "0.0.3"
     }
 }
