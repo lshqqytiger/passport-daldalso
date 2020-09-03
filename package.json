@@ -2,9 +2,24 @@
     "name": "passport-daldalso",
     "version": "1.0.0",
     "description": "Daldalso authentication strategy for Passport",
+	"keywords": [
+		"passport",
+		"daldalso",
+		"oauth"
+	],
     "dependencies": {
 		"passport-oauth": "^1.0.0",
 		"underscore": "^1.8.3",
 		"uid2": "0.0.3"
-    }
+    },
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/lshqqytiger/passport-daldalso.git"
+	},
+	"author": {
+		"name": "Seunghoon Lee",
+		"email": "op@bf2.xyz",
+		"url": "https://github.com/lshqqytiger"
+	},
+	"homepage": "https://daldal.so"
 }
