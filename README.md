@@ -7,8 +7,8 @@
 	
 ## Usage
 
-	This module will provide the profile data you requested.
-	Refer to [this article](https://daldal.so/w/Daldalso/Document/seq/4) for profile data provided.
+This module will provide the profile data you requested.
+Refer to [this article](https://daldal.so/w/Daldalso/Document/seq/4) for profile data provided.
 	
 | Name | Data Type | Description |
 |:----:|--------|------|
