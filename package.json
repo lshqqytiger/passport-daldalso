@@ -1,6 +1,6 @@
 {
     "name": "passport-daldalso",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Daldalso authentication strategy for Passport",
 	"keywords": [
 		"passport",
@@ -17,7 +17,7 @@
 		"url": "git://github.com/lshqqytiger/passport-daldalso.git"
 	},
 	"author": {
-		"name": "Seunghoon Lee",
+		"name": "베프",
 		"email": "op@bf2.xyz",
 		"url": "https://github.com/lshqqytiger"
 	},
