@@ -10,13 +10,21 @@
 This module will provide the profile data you requested.
 Refer to [this article](https://daldal.so/w/Daldalso/Document/seq/4) for profile data provided.
 	
+
 | Name | Data Type | Description |
 |:----:|--------|------|
-| profile.key | String | User Identifier |
-| profile.id | String | Simplified User Identifier |
-| profile.name | String | Nickname (Not Real Name) |
-| profile.displayName | String | Nickname (Not Real Name) |
-| profile.email | String | Email Address |
-| profile.image | String | Profile Image URL |
-| profile.text | String | Introduction |
-| profile.exordial | String | Introduction |
+| key | String | User Identifier |
+| id | String | Simplified User Identifier |
+| name＊ | String | Nickname |
+| displayName＊ | String | Nickname |
+| email＊ | String | Email Address |
+| account＊ | String | Email Address |
+| libra＊ | JSON | Libra Data |
+| libra.level＊ | - | - |
+| libra.prev＊ | - | - |
+| libra.next＊ | - | - |
+| profile＊ | JSON | Profile Data |
+| profile.image＊ | String | Profile Image URL |
+| profile.text＊ | String | Introduction |
+
+＊: To get this data, you need to get permission about this from Daldalso.
