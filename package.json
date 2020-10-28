@@ -2,7 +2,7 @@
     "name": "passport-daldalso",
     "version": "1.0.7",
     "description": "Daldalso authentication strategy for Passport",
-	"main": "lib/index.js",
+    "main": "lib/index.js",
 	"keywords": [
 		"passport",
 		"daldalso",
