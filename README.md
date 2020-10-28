@@ -16,8 +16,6 @@ Refer to [this article](https://daldal.so/w/Daldalso/Document/seq/4) for profile
 | key | String | User Identifier |
 | id | String | Simplified User Identifier |
 | name＊ | String | Nickname |
-| displayName＊ | String | Nickname |
-| email＊ | String | Email Address |
 | account＊ | String | Email Address |
 | libra＊ | JSON | Libra Data |
 | libra.level＊ | - | - |
