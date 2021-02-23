@@ -31,23 +31,23 @@ passport.use(new DaldalsoStrategy({
 }, function(accessToken, refreshToken, o, done) {
 	User.findOne({
 		'id': o.id
-    }, function(err, user) {
-            if (!user) {
-                user = new User({
+	}, function(err, user) {
+			if (!user) {
+				user = new User({
 					key: o.key,
-                    name: o.name,
-                    provider: 'daldalso',
-                    profile: o.profile
-                });
-                user.save(function(err) {
-                    if (err) console.log(err);
-                    return done(err, user);
-                });
-            } else {
-                return done(err, user);
-            }
-        });
-    }
+					name: o.name,
+					provider: 'daldalso',
+					profile: o.profile
+				});
+				user.save(function(err) {
+					if (err) console.log(err);
+					return done(err, user);
+				});
+			} else {
+				return done(err, user);
+			}
+		});
+	}
 ));
 ```
 
@@ -101,23 +101,23 @@ passport.use(new DaldalsoStrategy({
 }, function(accessToken, refreshToken, o, done) {
 	User.findOne({
 		'id': o.id
-    }, function(err, user) {
-            if (!user) {
-                user = new User({
+	}, function(err, user) {
+			if (!user) {
+				user = new User({
 					key: o.key,
-                    name: o.name,
-                    provider: 'daldalso',
-                    profile: o.profile
-                });
-                user.save(function(err) {
-                    if (err) console.log(err);
-                    return done(err, user);
-                });
-            } else {
-                return done(err, user);
-            }
-        });
-    }
+					name: o.name,
+					provider: 'daldalso',
+					profile: o.profile
+				});
+				user.save(function(err) {
+					if (err) console.log(err);
+					return done(err, user);
+				});
+			} else {
+				return done(err, user);
+			}
+		});
+	}
 ));
 ```
 
@@ -139,7 +139,7 @@ app.route('/login/daldalso/callback')
 
 ## Special Thanks
 
-- 쪼리핑
+- [쪼리핑](https://github.com/JJoriping)
 
 ## License
 
