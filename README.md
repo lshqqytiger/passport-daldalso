@@ -80,6 +80,7 @@ $ npm install passport-daldalso
 ### 사용 안내
 
 이 모듈은 요청된 프로필 정보를 달달소로부터 받아오고, 제공합니다.
+
 [이 문서](https://daldal.so/w/Daldalso/Document/seq/4) 에서 제공되는 프로필 정보에 대해 더 자세히 알아볼 수 있습니다.
 
 #### 송수신체 등록하기 (달달소 OAuth 2.0 애플리케이션)
