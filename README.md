@@ -14,7 +14,7 @@ $ npm install passport-daldalso
 This module will provide the profile data you requested.
 Refer to [this article](https://daldal.so/w/Daldalso/Document/seq/4) for profile data provided.
 
-#### Create a Satellite (Daldalso OAuth Application)
+#### Create a Satellite (Daldalso OAuth 2.0 Application)
 
 First of all, you must create a satellite.
 Visit [Daldalso OAuth Register Page](https://daldal.so/oauth/register) and register your satellite.
@@ -82,7 +82,7 @@ $ npm install passport-daldalso
 이 모듈은 요청된 프로필 정보를 달달소로부터 받아오고, 제공합니다.
 [이 문서](https://daldal.so/w/Daldalso/Document/seq/4) 에서 제공되는 프로필 정보에 대해 더 자세히 알아볼 수 있습니다.
 
-#### 송수신체 등록하기 (달달소 OAuth 애플리케이션)
+#### 송수신체 등록하기 (달달소 OAuth 2.0 애플리케이션)
 
 '달달소 계정으로 로그인' 기능을 구현하기 위해서는, 가장 먼저 송수신체를 등록해야 합니다.
 [달달소 송수신체 등록하기](https://daldal.so/oauth/register) 에 접속하고 송수신체를 등록 해주세요.
