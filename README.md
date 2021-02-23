@@ -1,4 +1,5 @@
 # Passport-Daldalso
+
 - Daldalso authentication strategy for Passport (OAuth 2.0)
 
 ## English
@@ -12,11 +13,13 @@ $ npm install passport-daldalso
 ### Usage
 
 This module will provide the profile data you requested.
+
 Refer to [this article](https://daldal.so/w/Daldalso/Document/seq/4) for profile data provided.
 
 #### Create a Satellite (Daldalso OAuth 2.0 Application)
 
 First of all, you must create a satellite.
+
 Visit [Daldalso OAuth Register Page](https://daldal.so/oauth/register) and register your satellite.
 
 #### Configure Strategy
@@ -86,8 +89,11 @@ $ npm install passport-daldalso
 #### 송수신체 등록하기 (달달소 OAuth 2.0 애플리케이션)
 
 '달달소 계정으로 로그인' 기능을 구현하기 위해서는, 가장 먼저 송수신체를 등록해야 합니다.
-[달달소 송수신체 등록하기](https://daldal.so/oauth/register) 에 접속하고 송수신체를 등록 해주세요.
+
+[달달소 송수신체 등록하기](https://daldal.so/oauth/register) 에 접속하고 송수신체를 등록해주세요.
+
 송수신체 등록 심사가 끝나면, 식별자와 고윳값을 받게 됩니다.
+
 고윳값은 [내 송수신체 목록](https://daldal.so/oauth/me) 의 송수신체 클릭 후 상단 메뉴의 '고윳값 복사' 기능을 통해 복사할 수 있습니다.
 
 #### Strategy 설정
@@ -124,7 +130,7 @@ passport.use(new DaldalsoStrategy({
 
 #### 인증 요청
 
-Express 애플리케이션의 라우트 미들웨어 예제이다.
+Express 애플리케이션의 라우트 미들웨어 예제입니다.
 
 ```javascript
 app.route('/login/daldalso')
