@@ -2,6 +2,8 @@
 
 - Daldalso authentication strategy for Passport (OAuth 2.0)
 
+[![npm](https://img.shields.io/npm/v/passport-daldalso.svg)](https://www.npmjs.com/package/passport-daldalso)
+
 ## English
 
 ### Install
