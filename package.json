@@ -1,13 +1,17 @@
 {
     "name": "passport-daldalso",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "description": "Daldalso authentication strategy for Passport",
     "main": "lib/index.js",
 	"keywords": [
 		"passport",
 		"daldalso",
-		"oauth"
+		"oauth2"
 	],
+    "bugs": {
+        "url": "http://github.com/lshqqytiger/passport-daldalso/issues"
+    },
+    "license": "MIT",
     "dependencies": {
 		"passport-oauth": "^1.0.0",
 		"underscore": "^1.8.3",
