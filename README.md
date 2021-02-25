@@ -27,33 +27,40 @@ Visit [Daldalso OAuth Register Page](https://daldal.so/oauth/register) and regis
 #### Configure Strategy
 
 ```javascript
-var DaldalsoStrategy = require('passport-daldalso').Strategy;
+let DaldalsoStrategy = require("passport-daldalso").Strategy;
 
-passport.use(new DaldalsoStrategy({
-	clientID: config.daldalso.clientID,
-	clientSecret: config.daldalso.clientSecret,
-	callbackURL: config.daldalso.callbackURL
-}, function(accessToken, refreshToken, o, done) {
-	User.findOne({
-		'id': o.id
-	}, function(err, user) {
-			if (!user) {
-				user = new User({
-					key: o.key,
-					name: o.name,
-					provider: 'daldalso',
-					profile: o.profile
-				});
-				user.save(function(err) {
-					if (err) console.log(err);
-					return done(err, user);
-				});
-			} else {
-				return done(err, user);
-			}
-		});
-	}
-));
+passport.use(
+  new DaldalsoStrategy(
+    {
+      clientID: config.daldalso.clientID,
+      clientSecret: config.daldalso.clientSecret,
+      callbackURL: config.daldalso.callbackURL,
+    },
+    function (accessToken, refreshToken, o, done) {
+      User.findOne(
+        {
+          id: o.id,
+        },
+        function (err, user) {
+          if (!user) {
+            user = new User({
+              key: o.key,
+              name: o.name,
+              provider: "daldalso",
+              profile: o.profile,
+            });
+            user.save(function (err) {
+              if (err) console.log(err);
+              return done(err, user);
+            });
+          } else {
+            return done(err, user);
+          }
+        }
+      );
+    }
+  )
+);
 ```
 
 #### Authenticate Requests
@@ -63,15 +70,20 @@ Use `passport.authenticate()`, specifying the `daldalso` strategy, to authentica
 For example, as route middleware in an Express application:
 
 ```javascript
-app.route('/login/daldalso')
-    .get(passport.authenticate('daldalso', {
-        failureRedirect: config.daldalso.loginFail
-    }), users.signin);
+app.route("/login/daldalso").get(
+  passport.authenticate("daldalso", {
+    failureRedirect: config.daldalso.loginFail,
+  }),
+  users.signin
+);
 
-app.route('/login/daldalso/callback')
-    .get(passport.authenticate('daldalso', {
-        failureRedirect: config.daldalso.loginFail
-    }), users.createAccount, users.authCallback);
+app.route("/login/daldalso/callback").get(
+  passport.authenticate("daldalso", {
+    failureRedirect: config.daldalso.loginFail,
+  }),
+  users.createAccount,
+  users.authCallback
+);
 ```
 
 ## 한국어
@@ -101,33 +113,40 @@ $ npm install passport-daldalso
 #### Strategy 설정
 
 ```javascript
-var DaldalsoStrategy = require('passport-daldalso').Strategy;
+let DaldalsoStrategy = require("passport-daldalso").Strategy;
 
-passport.use(new DaldalsoStrategy({
-	clientID: config.daldalso.clientID,
-	clientSecret: config.daldalso.clientSecret,
-	callbackURL: config.daldalso.callbackURL
-}, function(accessToken, refreshToken, o, done) {
-	User.findOne({
-		'id': o.id
-	}, function(err, user) {
-			if (!user) {
-				user = new User({
-					key: o.key,
-					name: o.name,
-					provider: 'daldalso',
-					profile: o.profile
-				});
-				user.save(function(err) {
-					if (err) console.log(err);
-					return done(err, user);
-				});
-			} else {
-				return done(err, user);
-			}
-		});
-	}
-));
+passport.use(
+  new DaldalsoStrategy(
+    {
+      clientID: config.daldalso.clientID,
+      clientSecret: config.daldalso.clientSecret,
+      callbackURL: config.daldalso.callbackURL,
+    },
+    function (accessToken, refreshToken, o, done) {
+      User.findOne(
+        {
+          id: o.id,
+        },
+        function (err, user) {
+          if (!user) {
+            user = new User({
+              key: o.key,
+              name: o.name,
+              provider: "daldalso",
+              profile: o.profile,
+            });
+            user.save(function (err) {
+              if (err) console.log(err);
+              return done(err, user);
+            });
+          } else {
+            return done(err, user);
+          }
+        }
+      );
+    }
+  )
+);
 ```
 
 #### 인증 요청
@@ -135,20 +154,33 @@ passport.use(new DaldalsoStrategy({
 Express 애플리케이션의 라우트 미들웨어 예제입니다.
 
 ```javascript
-app.route('/login/daldalso')
-    .get(passport.authenticate('daldalso', {
-        failureRedirect: config.daldalso.loginFail
-    }), users.signin);
+app.route("/login/daldalso").get(
+  passport.authenticate("daldalso", {
+    failureRedirect: config.daldalso.loginFail,
+  }),
+  users.signin
+);
 
-app.route('/login/daldalso/callback')
-    .get(passport.authenticate('daldalso', {
-        failureRedirect: config.daldalso.loginFail
-    }), users.createAccount, users.authCallback);
+app.route("/login/daldalso/callback").get(
+  passport.authenticate("daldalso", {
+    failureRedirect: config.daldalso.loginFail,
+  }),
+  users.createAccount,
+  users.authCallback
+);
 ```
 
 ## Special Thanks
 
 - [쪼리핑](https://github.com/JJoriping)
+
+### Repository Referenced
+
+- [passport-snapchat](https://github.com/Snapchat/passport-snapchat)
+- [passport-vercel](https://github.com/skogsmaskin/passport-vercel)
+- [passport-daldalso-oauth2](https://github.com/KKuTu-Korea/passport-daldalso-oauth2)
+- [passport-naver](https://github.com/naver/passport-naver)
+- [passport-kakao](https://github.com/rotoshine/passport-kakao)
 
 ## License
 
