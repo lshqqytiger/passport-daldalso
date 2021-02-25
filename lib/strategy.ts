@@ -1,5 +1,3 @@
-import { inherits } from 'util';
-import underscore from 'underscore';
 import OAuth2Strategy, { InternalOAuthError, VerifyFunction, StrategyOptions } from 'passport-oauth2';
 import uid from 'uid2';
 
