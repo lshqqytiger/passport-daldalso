@@ -1,5 +1,7 @@
 # Passport-Daldalso
 
+![Image](https://repository-images.githubusercontent.com/283538474/c6df2680-9f08-11eb-9168-a3e4e22ffbc8)
+
 - Daldalso authentication strategy for Passport (OAuth 2.0)
 
 [![npm](https://img.shields.io/npm/v/passport-daldalso.svg)](https://www.npmjs.com/package/passport-daldalso)
@@ -185,5 +187,7 @@ app.route("/login/daldalso/callback").get(
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+
+This repository used a secondary processed image of Daldalso logo. The copyright of that logo is to its original author, JJoriping.
 
 ⓒ 2020-2021 이승훈
